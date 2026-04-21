@@ -19,7 +19,7 @@
   --purple:      #5B2D8A;
   --purple-lt:   #7B4AAF;
   --cream:       #EDE8DF;
-  --muted:       #5A6070;
+  --muted:       #7c8291;
   --line:        rgba(201,169,110,0.12);
   --line-teal:   rgba(27,92,107,0.3);
   --font-main:   'Cormorant Garamond', Georgia, serif;
@@ -201,11 +201,11 @@ section {
 
 .hero-name {
   font-family: var(--font-main);
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: clamp(3.5rem, 6vw, 5rem);
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.1px;
   opacity: 0;
   animation: fadeUp 0.9s 0.4s forwards;
 }
@@ -222,16 +222,17 @@ section {
   letter-spacing: 0.2em;
   color: var(--cream);
   /* text-transform: uppercase; */
-  margin-bottom: 2.5rem;
   opacity: 0;
   animation: fadeUp 0.9s 0.6s forwards;
+  margin-top: 1px;
 }
 
 .hero-divider {
   width: 50px;
   height: 1px;
   background: linear-gradient(to right, var(--gold-dim), var(--teal));
-  margin-bottom: 2.5rem;
+  margin-top: 1px;
+  margin-bottom: 1rem;
   opacity: 0;
   animation: fadeUp 0.9s 0.7s forwards;
 }
@@ -256,7 +257,7 @@ section {
 
 .btn {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.25em;
   text-transform: uppercase;
