@@ -115,67 +115,135 @@
         </section>
 
         <section id="projects">
-            <h2>Selected Projects</h2>
+            <h2>Projects</h2>
 
             <div class="project">
-                <h3>Medical Indication Prediction</h3>
-                <p>Machine learning project for predicting medical indications from data.</p>
-                <p class="tags">Python · Machine Learning · Scikit-learn</p>
+                <h3>NeuroINN</h3>
+                <p>
+                    NeuroINN is a standalone application used to predict medical indication using supervised learning. The goal of the project was to create a model capable of predicting medical results by analyzing sets of combinations.
+                    The first step was the data preparation : molecules represented data entries while medical indications the targets. Next step was to use one-hot encoding to transform the categorical data into adapted shape for the deep learning model. It was designed with different layers (input, hidden and output), and with several rounds of optimisation to reach the best evaluation metrics.
+                    A simple application was made to upload new input data and use the trained model to predict medical indications.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Deep learning, data preprocessing, neural network design, model training and optimization, predective analysis in medical field (pharma).</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, TensorFlow, Keras, automatic manipulation of files.</p>
+            </div>
+
+
+            <div class="project">
+                <h3>Questionnaire Analysis</h3>
+                <p>
+                    The project main focus was to transform and encode data from various questionnaires done for educational institutions, to improve the statistical analysis and add a predictive model. The first step was to get all the necessary information divided into more than 100 columns and apply preprocessing and cleaning, then insert additional data like country classification, status of the institution and its size.
+                    A descriptive analysis was applied by creating multiple graphical summaries of the processed data. And for the modeling part, we used the context variables to develop explanatory logistic models and Baysian networks.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Group work, documentation, data preprocessing, analysis in educational field.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python (TfidfTransformer, CountVectorizer, MultinominalNB, Pipeline, training models), R (statistical analysis and vizualisation with ggplot2).</p>
             </div>
 
             <div class="project">
-                <h3>Automated Pharmaceutical Data Analysis</h3>
-                <p>Data processing and analysis workflows for pharmaceutical datasets.</p>
-                <p class="tags">Python · Pandas · Data Analysis</p>
+                <h3>VOD Platform</h3>
+                <p>
+                    The project aims to develop a VOD platform (Video On Demand) that allows users to publish and watch videos. It's main user base is the educational sector and entertainement, with an option to integrate Moodle to share external links, since Moodle cannot handle videos directly, the videos will be stored on the VOD platform’s servers, and Moodle will simply display the links.
+                    Initial deployment is on a VM, followed by migration to a container-based infrastructure to increase storage capacity.
+                </p>
+                <p class="tags"><strong>Competences:</strong> VM management and optimisation, platform adaptation into containers to improve the scalability and storage management.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> NGINX, Python, RTMP, CEPH, Docker.</p>
             </div>
 
             <div class="project">
-                <h3>Supplier Management Web Application</h3>
-                <p>Web application for managing supplier information and related operations.</p>
-                <p class="tags">Java · SQL · Web Development</p>
+                <h3>Data Check</h3>
+                <p>
+                    Generating automatic Excel reports for pharaceutical data. The solution manage several entries and then generates: global analysis, city analysis, individual analysis and ad-hoc requests. Each new period has an additional analysis for errors as a first QC.
+                </p>
+                <p class="tags"><strong>Competences:</strong> report automation, excel file generation, data preprocessing, data analysis.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, Excel.</p>
             </div>
 
             <div class="project">
-                <h3>Pharmacy Matching System</h3>
-                <p>System for matching and comparing pharmacy information across datasets.</p>
-                <p class="tags">Python · Data Processing · Matching</p>
+                <h3>Supplier management web app</h3>
+                <p>
+                    Development and implementation of a web application for supplier management, using JEE (Java Entreprise Edition) and SQL. the main features are: supplier management (interface for adding, modifying and deleting suppliers), SQL database (storage and management of supplier information), update and improve the old application then link it to existing apps that are using the same database.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Data preprocessing, DB management, UI/UX.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Java, SQL, Web Development, Python.</p>
+            </div>
+
+
+            <div class="project">
+                <h3>Poki v1</h3>
+                <p>
+                    Poki v1 is a project that aims to do an analysis for pharmaceutical data to identify and clean up anomalies, calculate average prices, and provide detailed reports. Main features are: cleaning data (for volumes, pack size, dosage, prices), adding new data (doubtful information, outlier detection, outlier cleaning, statistical calculations). The analyses are done by city, type of pharmacy and products SKU.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Data preprocessing and analysis.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, NLP, Excel.</p>
+            </div>
+
+
+            <div class="project">
+                <h3>Pharmacies matching</h3>
+                <p>
+                    Developed an automated tool to match pharmacy records across different data sources using text similarity, fuzzy matching, and geographical information. The tool identifies duplicates, enriches pharmacy databases, and flags uncertain matches for manual verification.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Data cleaning and preprocessing, automation, duplicate detection, geospatial analysis, data quality management, fuzzy matching and text similarity.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, NLP, pandas, scikit-learn, DBSCAN, gps coordinates.</p>
+            </div>
+
+
+            <div class="project">
+                <h3>Universal Account</h3>
+                <p>
+                    Designed a unified account database to centralize and enrich pharmacy and customer data from multiple sources. The project focused on improving data quality, detecting duplicates, automating account verification, and maintaining consistent customer code mappings.
+                </p>
+                <p class="tags"><strong>Competences:</strong> DB design, data modeling, SQL DB management, data quality management, duplicate detection, data validation and verification, process automation, system architecture.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> fuzzy matching, SQL, Python, modeling.</p>
+            </div>
+
+
+            <div class="project">
+                <h3>CRM & Universal Account Synchronization with Airflow</h3>
+                <p>
+                    Configured Apache Airflow to automate synchronization between CRM and Universal Account databases. Set up local development using Docker and deployed the production environment using Google Cloud Composer.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Workflow orchestration, ETL automation, DB sync, Docker and environment configuration, cloud deployment, pipeline management.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, Apache Airflow, Docker, Google cloud composer, SQL.</p>
             </div>
 
             <div class="project">
-                <h3>Client Data Automation System</h3>
-                <p>Automation of client data processing and reporting tasks.</p>
-                <p class="tags">Python · Excel · Automation</p>
+                <h3>Market performance Reporting API</h3>
+                <p>
+                    Reporting solution to provide key e-commerce performance indicators in compliance with specific country regulatory requirements. Designed a web reporting platform with monthly data updates, covering users, suppliers, products, transactions and other valuable information.
+                </p>
+                <p class="tags"><strong>Competences:</strong> API and reporting development, data extraction and validation, KPI reporting.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, SQL, web dev.</p>
             </div>
 
             <div class="project">
-                <h3>Universal Account System</h3>
-                <p>Application for managing account information and related data.</p>
-                <p class="tags">Python · SQL · Application Development</p>
+                <h3>Automated QC reporting system</h3>
+                <p>
+                    Developed an automated quality control reporting system to detect anomalies and outliers in data records. Built an interactive platform allowing users to explore data, monitor quality indicators and identify potential issues (while reducing manual QC tasks).
+                </p>
+                <p class="tags"><strong>Competences:</strong> Data quality and validation, data analysis and anomaly detection, interactive dashboard, data visualization, automation and reporting.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, R, streamlit, SQL.</p>
             </div>
 
             <div class="project">
-                <h3>Market Performance Reporting API</h3>
-                <p>API for processing and providing market performance reporting data.</p>
-                <p class="tags">Python · API · Data</p>
+                <h3>Pharmacy data enrichment</h3>
+                <p>
+                    Improved pharmacy data quality by identifying duplicates and enriching records with accurate location and contact information using Google Places API. Integrated verified pharmacy details into the general DB.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Data cleaning and deduplication, Geospatial research, API integration.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, SQL, Google API.</p>
             </div>
 
             <div class="project">
-                <h3>Automated QC Reporting System</h3>
-                <p>Automated quality control reporting and data validation workflows.</p>
-                <p class="tags">Python · Streamlit · Data Quality</p>
+                <h3>Image analysis with OpenAI Vision Models</h3>
+                <p>
+                    Explored OpenAI vision models to analyze pharmacy storefront images and extract visual information, including object recognition, text extraction (OCR), image classification and scene description. Tested API-based image analysis to check its potential for automated pharmacy identification and data enrichment.
+                </p>
+                <p class="tags"><strong>Competences:</strong> Computer Vision, AI and Vision models, API intergration, Image recognition and OCR, prompt engineering, data extraction.</p>
+                <p class="tags"><strong>Tools & technologies:</strong> Python, OpenAI API, Vision models, JSON.</p>
             </div>
 
-            <div class="project">
-                <h3>Pharmacy Image Intelligence</h3>
-                <p>Image analysis application using OpenAI Vision.</p>
-                <p class="tags">Python · OpenAI Vision · AI</p>
-            </div>
-
-            <div class="project">
-                <h3>E-commerce Data System</h3>
-                <p>Data management and application workflows for an e-commerce project.</p>
-                <p class="tags">Python · Flask · SQL</p>
-            </div>
+            
         </section>
 
         <section id="experience">
